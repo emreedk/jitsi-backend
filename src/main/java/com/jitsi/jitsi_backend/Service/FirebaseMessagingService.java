@@ -18,7 +18,7 @@ public class FirebaseMessagingService {
     @PostConstruct
     public void initialize() throws IOException {
         FileInputStream serviceAccount =
-                new FileInputStream("src/main/resources/firebase-service-account-example.json");
+                new FileInputStream("src/main/resources/firebase-service-accountad.json");
 
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
